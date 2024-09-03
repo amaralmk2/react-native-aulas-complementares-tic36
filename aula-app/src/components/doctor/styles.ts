@@ -1,7 +1,12 @@
 import styled from 'styled-components/native';
 
 
-export const Container = styled.View`
+export type DoctorProps = {
+    type: 'primary' | 'secondary';
+}
+
+
+export const Container = styled.TouchableOpacity`
             
             top: 350px;
             left: 100px;
@@ -11,10 +16,10 @@ export const Container = styled.View`
             padding: 22px;
             border-radius: 7px;
             
-            background: ${({theme}) => theme.COLORS.INFO};
+            background: ${({type}) => type === 'primary' ? 'red' : 'green'};
             
         
-`;
+`<DoctorProps>;
 
 export const Avatar = styled.Image`
 
@@ -27,14 +32,14 @@ export const Avatar = styled.Image`
 export const Name = styled.Text`
 
 margin-top: 7px;
-font-size: 22px;
-color: ${({theme}) => theme.COLORS.PRIMARY_800};
+font-size: 19px;
+color: ${({theme}) => theme.COLORS.PRIMARY_900};
 
 `;
 
 export const Speciality = styled.Text`
 
-font-size: 19px;
+font-size: 17px;
 color: ${({theme}) => theme.COLORS.PRIMARY_700};
 
 

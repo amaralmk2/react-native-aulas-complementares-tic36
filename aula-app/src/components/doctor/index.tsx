@@ -1,10 +1,10 @@
-import { Container, Avatar, Name, Speciality } from './styles';
+import { Container, Avatar, Name, Speciality, DoctorProps } from './styles';
 
 
-export function Doctor(){
+export function Doctor({type} : DoctorProps){
 
     return (
-        <Container>
+        <Container type={type}>
             <Avatar source={{uri: "https://github.com/amaralmk2.png"}} />
             <Name>
                 Alexandre Amaral

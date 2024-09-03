@@ -9,7 +9,7 @@ import { Doctor } from './src/components/doctor';
 export default function App() {
   return (    
     <ThemeProvider theme={dark}>
-    <Doctor />
+    <Doctor type='secondary' />
     </ThemeProvider>
   );
 }

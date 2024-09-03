@@ -1,6 +1,18 @@
-import {StyleSheet } from 'react-native';
+//import {StyleSheet } from 'react-native';
+import styled from 'styled-components/native';
 
-export const styled = StyleSheet.create({
+
+export const Container = styled.View`
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+`;
+
+export const Text = styled.Text`
+            font-size: 48px;
+`;
+
+/*export const styled = StyleSheet.create({
     container: {
             flex: 1,
             alignItems: 'center',
@@ -11,4 +23,4 @@ export const styled = StyleSheet.create({
         fontSize: 48
 
     }
-})
+})*/
